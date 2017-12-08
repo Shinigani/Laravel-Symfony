@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My cool blog posts{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {% if is_granted('ROLE_USER') %}
+            <button class="btn-default" href="#">Ma TODO List</button>
+        {% else %}
+            <button class="btn-default" >FUUUUUUUUUUUUUUUUUUUUUUUU</button>
+        {% endif %}
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}
